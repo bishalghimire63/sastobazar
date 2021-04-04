@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:sastobazar/main.dart';
-import 'package:sastobazar/screens/login.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class MainDrawer extends StatelessWidget {
@@ -98,13 +97,13 @@ class MainDrawer extends StatelessWidget {
               context, MaterialPageRoute(builder: (context) => MyApp()));
         },
         leading: Icon(
-          Icons.rate_review,
-          color: Colors.green,
+          Icons.logout,
+          color: Colors.black,
         ),
         title: Text("Logout"),
       ),
       SizedBox(
-        height: 80.0,
+        height: 30.0,
       ),
       Divider(
         color: Colors.black,

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/services.dart';
-import 'package:sastobazar/constraints/constants.dart';
 import 'package:sastobazar/widgets/custom_input.dart';
 
 class HomeTab extends StatefulWidget {
@@ -14,24 +12,6 @@ String searchValue = "";
 class _HomeTabState extends State<HomeTab> {
   @override
   Widget build(BuildContext context) {
-    Widget image_carousel = new Container(
-      height: 140.0,
-      child: new Carousel(
-        boxFit: BoxFit.fill,
-        images: [
-          AssetImage('assets/furnitures.jpg'),
-          AssetImage('assets/car.png'),
-          AssetImage('assets/phone.jpg'),
-        ],
-        autoplay: true,
-        animationCurve: Curves.fastOutSlowIn,
-        animationDuration: Duration(milliseconds: 1000),
-        dotSize: 5.0,
-        dotBgColor: Colors.transparent,
-        showIndicator: true,
-        indicatorBgPadding: 7.0,
-      ),
-    );
     return Scaffold(
       body: ListView(
         children: [
@@ -62,12 +42,6 @@ class _HomeTabState extends State<HomeTab> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Center(child: Text("$searchValue")),
-              Center(child: Text("Catogory2")),
-              Center(child: Text("Catogory1")),
-              Center(child: Text("Catogory2")),
-              Center(child: Text("Catogory1")),
-              Center(child: Text("Catogory2")),
-              Center(child: Text("Catogory1")),
               Center(child: Text("Catogory2")),
             ],
           ),

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:sastobazar/Pages/notification.dart';
+import 'package:sastobazar/Pages/edit_profile.dart';
 import 'package:sastobazar/tabs/cart_tab.dart';
 import 'package:sastobazar/tabs/home_tab.dart';
 import 'package:sastobazar/tabs/message_tab.dart';
-import 'package:sastobazar/tabs/profile_tab.dart';
+import 'package:sastobazar/Pages/profile_tab.dart';
 import 'package:sastobazar/widgets/side_tabs.dart';
 
 import '../widgets/bottom_tabs.dart';

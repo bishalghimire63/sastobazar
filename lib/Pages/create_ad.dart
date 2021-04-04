@@ -67,6 +67,12 @@ class _CreateAdState extends State<CreateAd> {
               ),
             ],
           ),
+          Divider(
+            height: 10,
+          ),
+          SizedBox(
+            height: 10,
+          ),
           Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [

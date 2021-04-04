@@ -32,6 +32,7 @@ dependencies:
   http: ^0.12.2
   carousel_pro: ^0.0.13
   shared_preferences: any
+  image_picker: ^0.6.7+22
 
 dependency_overrides:
   # Override path_provider to pick up fixes for FFI changes.
