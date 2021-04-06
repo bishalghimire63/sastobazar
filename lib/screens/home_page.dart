@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sastobazar/Pages/notification.dart';
 import 'package:sastobazar/Pages/edit_profile.dart';
 import 'package:sastobazar/tabs/cart_tab.dart';
-import 'package:sastobazar/tabs/home_tab.dart';
+import 'package:sastobazar/tabs/home/home_screen.dart';
 import 'package:sastobazar/tabs/message_tab.dart';
 import 'package:sastobazar/Pages/profile_tab.dart';
 import 'package:sastobazar/widgets/side_tabs.dart';
@@ -33,11 +33,20 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Sasto bazar"),
-          backgroundColor: Colors.purple,
+          title: Text(
+            "Sasto bazar",
+            style: TextStyle(
+              color: Color(0xff0C2551),
+            ),
+          ),
+          backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+          elevation: 1,
           actions: [
             IconButton(
-                icon: Icon(Icons.notifications),
+                icon: Icon(
+                  Icons.notifications,
+                  color: Colors.blue,
+                ),
                 onPressed: () {
                   Navigator.push(
                       context,

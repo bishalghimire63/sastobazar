@@ -68,6 +68,13 @@ class _MyAppState extends State<MyApp> {
                   } else if (snapshot.data == null) {
                     return Login();
                   }
+                  // if (snapshot.data == true) {
+                  //   return HomePage();
+                  // } else if (snapshot.data == false) {
+                  //   return Login();
+                  // } else if (snapshot.data == null) {
+                  //   return Login();
+                  // }
                   // if (!snapshot.hasData) {
                   //   return Center(
                   //     child: CircularProgressIndicator(),

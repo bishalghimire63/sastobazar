@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sastobazar/Pages/create_ad.dart';
+import 'package:sastobazar/Pages/create_ad/create_ad.dart';
 
 class BottomTabs extends StatefulWidget {
   final int selectedTab;
@@ -31,7 +31,7 @@ class _BottomTabsState extends State<BottomTabs> {
         ],
       ),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           BottomTabButton(
             onPressed: () {

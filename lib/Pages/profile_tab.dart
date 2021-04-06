@@ -15,7 +15,7 @@ class ProfileTab extends StatefulWidget {
 
 class _ProfileTabState extends State<ProfileTab> {
   static final String uploadEndPoint =
-      'http://localhost:1234/sasto/upload_image.php';
+      'http://192.168.0.2:1234/sasto/upload_image.php';
   Future<File> file;
 
   String status = '';
@@ -64,6 +64,7 @@ class _ProfileTabState extends State<ProfileTab> {
             null != snapshot.data) {
           tempFile = snapshot.data;
           base64Image = base64Encode(snapshot.data.readAsBytesSync());
+          // print(base64Image);
           return Flexible(
             child: Image.file(
               snapshot.data,

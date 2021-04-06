@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:sastobazar/Pages/Setting.dart';
-import 'package:sastobazar/Pages/profile_tab.dart';
 import 'package:sastobazar/screens/home_page.dart';
 
 class ProfilePage extends StatefulWidget {
